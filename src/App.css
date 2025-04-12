@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
+    body {   
+        font-size: 0.9em;
+    }
+}
+
+body {
+    font-family: 'Georgia', sans-serif;
+    background-color: rgb(232, 220, 220);
+    /* color: rgb(246, 66, 96); */
+    color: rgb(0, 0, 0);
+}
+
+.toaster {
+    font-family: 'Quicksand', sans-serif;
+}

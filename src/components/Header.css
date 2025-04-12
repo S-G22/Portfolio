@@ -1,0 +1,143 @@
+/* === General Navbar Styling === */
+.navbar {
+    font-size: 22px;
+    font-weight: 700;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: linear-gradient(90deg, rgba(145, 80, 255, 1) 0%, rgba(208, 169, 255, 1) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+  }
+  
+  /* === Logo/Title === */
+  .container h1 {
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .container h1:hover {
+    color: #ffe7ff;
+    transform: rotate(-2deg) scale(1.05);
+  }
+  
+  /* Emoji spin */
+  .container h1:active {
+    animation: spinEmoji 0.6s linear;
+  }
+  
+  @keyframes spinEmoji {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* === Menu Icon (mobile) === */
+  .menu-icon {
+    display: none;
+    color: white;
+    cursor: pointer !important;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-icon:hover {
+    color: #fff0ff;
+    transform: scale(1.1);
+  }
+  
+  /* === Desktop Nav === */
+  .nav-elements ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-elements li {
+    padding: 0 14px;
+    position: relative;
+  }
+  
+  .nav-elements li::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+    border-radius: 2px;
+  }
+  
+  .nav-elements li:hover::after {
+    transform: scaleX(1);
+  }
+  
+  .links {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .links:hover {
+    color: #ffdfff;
+  }
+  
+  /* === Mobile Styles === */
+  @media (max-width: 790px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-elements {
+      position: absolute;
+      top: 75px;
+      right: 0;
+      background: rgba(208, 169, 255, 0.9);
+      width: 0;
+      overflow: hidden;
+      border-bottom-left-radius: 10px;
+      backdrop-filter: blur(12px);
+      transition: width 0.4s ease-in-out, padding 0.3s;
+      box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.3);
+    }
+  
+    .nav-elements.active {
+      width: max-content;
+      padding: 20px 40px;
+    }
+  
+    .nav-elements ul {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .nav-elements li {
+      margin-top: 12px;
+    }
+  
+    .nav-elements li::after {
+      display: none;
+    }
+  
+    .links {
+      font-size: 18px;
+      color: #fff;
+      text-shadow: 0 0 4px #000;
+    }
+  }
+  
