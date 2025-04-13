@@ -4,7 +4,7 @@ import Portfolio from '../../public/assets/images/portfolio.png';
 export const projects = [
   {
     title: "Hotel Dashboard - Admin Panel",
-    description: "The Hotel Dashboard - Admin Panel is a comprehensive web application designed to streamline hotel management operations. It features a secure login system with encryption/decryption, an efficient customer booking module with unique code generation, and full CRUD functionality for room types, employee management, and services. Built with AngularJS, .NET MVC, and SQL, the system ensures seamless navigation, real-time updates, and robust backend integration to support administrative tasks effectively.",
+    description: "The Hotel Dashboard is a web application for efficient hotel management, featuring secure login, booking, CRUD functionality, and real-time updates.",
     image: SpeechText,
     github: "https://github.com/S-G22/Hotel-Dashboard-Admin",
     // demo: "https://speechrecognition01.netlify.app/"

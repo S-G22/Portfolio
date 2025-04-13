@@ -7,7 +7,7 @@ import { TbBrandGithubFilled } from 'react-icons/tb'
 function Project() {
   return (
     <div id='projects' className='project '>
-        <h1>Projects</h1>
+        <h1><u>Projects</u></h1>
         <div className='project--card'>
           {projects.map((project) => (
               <div key={project.image} className='project--item'>
