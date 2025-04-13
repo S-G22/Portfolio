@@ -1,23 +1,20 @@
-import SpeechText from '../../public/assets/images/speech-to-text.png'
-import Portfolio from '../../public/assets/images/portfolio.png'
-import TaskEase from '../../public/assets/images/to-do-list.png'
-import ImageSearch from '../../public/assets/images/project-image.png'
-import ChatApp from '../../public/assets/images/chat-app.png';
+import SpeechText from '../../public/assets/images/dashboard.png'
+import Portfolio from '../../public/assets/images/portfolio.png';
 
 export const projects = [
   {
-    title: "Speech to Text",
-    description: "Crafted using React.js and Firebase, ShopSphere is an Amazon clone offers an immersive online shopping experience. Browse, add to cart, and seamlessly check out, all in one platform. Discover the convenience of e-commerce with my user-friendly and secure application.",
+    title: "Hotel Dashboard - Admin Panel",
+    description: "The Hotel Dashboard - Admin Panel is a comprehensive web application designed to streamline hotel management operations. It features a secure login system with encryption/decryption, an efficient customer booking module with unique code generation, and full CRUD functionality for room types, employee management, and services. Built with AngularJS, .NET MVC, and SQL, the system ensures seamless navigation, real-time updates, and robust backend integration to support administrative tasks effectively.",
     image: SpeechText,
-    github: "https://github.com/mangooes1/Speech-to-text-Recognition",
-    demo: "https://speechrecognition01.netlify.app/"
+    github: "https://github.com/S-G22/Hotel-Dashboard-Admin",
+    // demo: "https://speechrecognition01.netlify.app/"
   },
   {
     title: "My-Portfolio",
     description: "Discover my portfolio website, built with React.js and an array of libraries. Experience a showcase of my projects and skills in a user-friendly and engaging format.",
     image: Portfolio,
-    github: "https://github.com/mangooes1/my_portfolio",
-    demo: "https://portfolio-aasthasuman.netlify.app/"
+    github: "https://github.com/S-G22/Portfolio",
+    // demo: "https://portfolio-aasthasuman.netlify.app/"
   },
   // {
   //   title: "Mern Stack",

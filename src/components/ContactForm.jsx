@@ -11,7 +11,7 @@ function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault()
         
-        emailjs.sendForm('aastha90', 'template_duj6lao', form.current, 'cXD5Qt5AoTue799mK')
+        emailjs.sendForm('shivani22', 'template_r9bxx0z', form.current, 'wyqWTUpj8dNxh_06c')
             .then(() => {
                 toast.success("Thank you for reaching out to me!✨")
             }, (error) => {
@@ -25,8 +25,8 @@ function ContactForm() {
             <h3>Let's connect!!</h3>
             <div className="contact--grid">
                 <form ref={form} onSubmit={handleSubmit} className='contact--form'>
-                    <input type="text" name="user_name" placeholder = "Your name" required />
-                    <input type="email" name="user_email" placeholder = "Your email" required />
+                    <input type="text" name="name" placeholder = "Your name" required />
+                    <input type="email" name="email" placeholder = "Your email" required />
                     <textarea name = "message" placeholder = "Your message here" required />
                     <button>Send</button>
                 </form>

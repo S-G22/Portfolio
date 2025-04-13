@@ -6,7 +6,7 @@ import { TbBrandGithubFilled } from 'react-icons/tb'
 
 function Project() {
   return (
-    <div id='projects' className='project'>
+    <div id='projects' className='project '>
         <h1>Projects</h1>
         <div className='project--card'>
           {projects.map((project) => (
@@ -28,10 +28,10 @@ function Project() {
                       <TbBrandGithubFilled size={25} className='project--button--margin'/>
                       Source Code
                     </button>
-                    <button onClick={() => window.open(project.demo, '_blank')}>
+                    {/* <button onClick={() => window.open(project.demo, '_blank')}>
                       <TbWorld size={25} className='project--button--margin'/>
                       Live Demo
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               </div>
