@@ -25,13 +25,13 @@ function AboutMe() {
       </ul>
 
       <div className="about--button">
-        <a href="https://drive.google.com/file/d/1y5gkZ9wSk2mSpmez6hQ7cqPiPaqWwIIS/view?usp=sharing" target="_blank" rel="noreferrer">
+        <a href="https://drive.google.com/file/d/1KxwTQT5ljyQ15ZOaM27ZZv43DYzCXy-a/view?usp=drive_link" target="_blank" rel="noreferrer">
           <button>
             View Resume 
           </button>
         </a>
 
-        <a href={Resume} download="Aastha-Suman-resume.pdf">
+        <a href={Resume} download="Shivani-Resume.pdf">
           <button>
             Download 
           </button>
